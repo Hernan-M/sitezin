@@ -79,7 +79,7 @@ function d() {
     if(window.innerWidth > 800) {
         document.getElementById("logo4").src = "styles/insta-5.PNG";
     } else{
-        document.getElementById("logo4").src = "styles/mobile/d.jpeg";
+        document.getElementById("logo4").src = "styles/mobile/b.jpeg";
     };
 }
 
