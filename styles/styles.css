@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Shippori+Antique+B1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Quicksand&family=Shippori+Antique+B1&family=Source+Serif+Pro&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -32,6 +32,13 @@ html{
 
 }
 
+.text-only > .images{
+    width: 100%;
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+}
+
 body{
     display: flex;
     background-color: #FAFAFA;
@@ -60,10 +67,10 @@ header > .logo img{
 
 label[for="bt-menu"]{
     position: absolute;
-    top: 5px;
+    top: 25px;
     right: 5px;
-    background-color: #a10f18;
-    color: #f2d7d7;
+    background-color: #eb758d;
+    color: whitesmoke;
     align-content: center;
     align-items: justify;
     text-align: center;
@@ -72,7 +79,7 @@ label[for="bt-menu"]{
     width: 50px;
     height: 50px;
     display: none;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 #bt-menu{
@@ -171,7 +178,36 @@ label[for="bt-menu"]{
     }
 
     .text-img1{
+        width: 100px;
+    }
+
+    .text-img-index{
         display: none;
+    }
+
+    .secondary-img-index{
+        width: 200px;
+    }
+
+    .menu > ul li:hover ul li a,
+    .menu > ul li ul a{
+        padding: 15px 10px 15px 10px;
+        max-width: 28vw;
+        text-align: left;
+        font-size: 14px;
+        width: auto;
+    }
+
+    body > .container.title-text{
+        min-width: 80%;
+    }
+
+    .text-img1a img{
+        width: 100%;
+    }
+
+    .text-img1{
+       display: none;
     }
 
 
@@ -199,7 +235,7 @@ header > .menu {
     height: 25px;
     font-size: 1rem;
     font-weight: 700;
-    font-family: 'Shippori Antique B1', sans-serif;
+    font-family: 'Nunito', sans-serif;
     z-index: 2;
 }
 
@@ -251,7 +287,7 @@ header > .menu a{
 }
 
 body > .text-secondary{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Source Serif Pro', serif;
     font-size: calc(70% + 1vmin);
     text-align: justify;
     background-color: #f4c5cd73;
@@ -262,7 +298,7 @@ body > .text-secondary{
 }
 
 body > .main-text > .text-secondary{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Source Serif Pro', serif;
     font-size: calc(70% + 1vmin);
     text-align: justify;
     background-color: #f4c5cd73;
@@ -278,25 +314,31 @@ body > .main-text > .text-secondary > .text-only >h3{
 }
 
 body >.text-secondary > .text-only{
-    margin: 2vh 15vw 5vh 15vw;
+    margin: 2vh 10vw 5vh 10vw;
 }
 
 .text-only > p{
     margin-bottom: 2rem;
+    text-align: justify;
 }
 
+h3{
+    font-family: 'Nunito', sans-serif;
+}
 
 .text-secondary > .text-only > h3{
     margin-bottom: 20px;
 }
 
 .text-secondary > .text-only > h2{
-    text-align: center;
+    text-align: justify;
     margin-bottom: 40px;
+    font-family: 'Nunito', sans-serif;
 }
 
 .text-secondary > .text-only > h4{
     margin-bottom: 10px;
+    text-align: justify;
 }
 
 body > .container{
@@ -307,7 +349,7 @@ body > .container{
     margin: 80px 0 50px 0;
     justify-content: center;
     align-items: center;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Source Serif Pro', serif;
     position: relative;
 }
 
@@ -353,7 +395,7 @@ body > .container > .text.img> .info-desktop img{
 
 .text {
     color:var(--text-color);
-    font-size: cal(60% + 0.8vmin);
+    font-size: cal(70% + 1vmin);
 }
 
 body > .container > .principal.text{
@@ -361,7 +403,8 @@ body > .container > .principal.text{
 }
 
 body > .container.title-text{
-    width: 90vw;
+    max-width: 960px;
+    width: 68%;
     height: 10vh;
     flex-direction: column;
     align-items: center;
@@ -369,7 +412,7 @@ body > .container.title-text{
     background-color: #f48ca136;
     color: var(--color6);
     border-radius: 8px;
-    font-size: cal(80% + 0.8vmin);
+    padding: 0 1% 0 1%;
 }
 
 body > .carrossel{
@@ -542,52 +585,88 @@ footer > p,
     list-style-type: upper-roman;
     padding-bottom: 10px;
     margin-top: 0;
+    text-align: justify;
 }
 
 .text-only > ul{
     margin-left: 4rem;
     margin-bottom: 2rem;
+    text-align: justify;
 }
 
 .text-only> .cit-text{
     color: #59766c;
     font-style: italic;
-    padding: 5%;
+    padding: 0 5% 5% 5%  ;
 }
 .text-and-img{
-    padding: 5%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.text-and-img.next{
     display: flex;
     align-items: center;
+    flex-direction: row;
+}
+
+.text-img-index img{
+    max-width: 300px;
 }
 
 .text-and-img > ul{
     list-style: upper-roman;
+    padding-left: 4rem;
 }
 
 .text-and-img > .artigo {
     font-style: italic;
     color: #59766c;
+    padding: 0 5% 5% 5%;
 }
 
 .text-img1 img{
-    max-width: 300px;
+    max-width: 400px;
+    height: auto;
+}
+
+
+.text-img1a img{
+    padding: 20px 0 30px 0;
+    max-width: 400px;
     height: auto;
 }
 
 .text-only > .text-img2{
     display: flex;
-    justify-content: center;
     align-content: space-between;
     width: 100%;
     padding-top: 2rem;
     padding-bottom: 4rem;
 }
 
+
 .text-img2 img{
     max-width: 100%;
     border-radius: 8px;
     align-items: center;
     height: auto;
+}
+
+body > .main-text > .text-secondary > .text-only.idk{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+body > .main-text > .text-secondary > .text-only.idk > .secondary-img-index{
+    max-width: 450px;
+    padding: 0 0 40px 0;
 }
 
 
